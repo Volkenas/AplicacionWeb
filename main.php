@@ -318,16 +318,18 @@ include_once "operaciones/conexion.php";
           <li><a href="registro.php">Registro</a></li>
           <li class="divider-vertical"></li>
           <li class="dropdown">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown"><?php echo "{$_SESSION['user']}"; ?>
-            <!-- if (isset($_SESSION['user'])) {
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+            <?php
+            if (isset($_SESSION['user'])) {
             echo "{$_SESSION['user']}";
             echo "<strong class=\"caret\"></strong></a>";
             echo "<div class=\"dropdown-menu\" style=\"padding: 15px; padding-bottom: 0px;\">";
             echo "<form action=\"operaciones/logout.php\" method=\"post\" accept-charset=\"UTF-8\">";
             echo "<input class=\"btn btn-primary\" style=\"clear: left; width: 100%; height: 32px; font-size: 13px;\" type=\"submit\" name=\"commit\" value=\"Salir\" />";
             echo "</form>";
-          } -->
-            <?php
+          } 
+          else
+          {
             echo "Ingresar";
             echo "<strong class=\"caret\"></strong></a>";
             echo "<div class=\"dropdown-menu\" style=\"padding: 15px; padding-bottom: 0px;\">";
@@ -339,7 +341,7 @@ include_once "operaciones/conexion.php";
             echo "<input class=\"btn btn-primary\" style=\"clear: left; width: 100%; height: 32px; font-size: 13px;\" type=\"submit\" name=\"commit\" value=\"Entrar\" />";
             echo "</form>";
 
-             
+             }
             ?>   
                    
                

@@ -23,7 +23,7 @@ if($row = mysql_fetch_assoc($datauser))
 		$_SESSION['id_persona'] = $row['id_persona'];
 		$_SESSION['user'] = $row['user'];
 		$_SESSION['password'] = $row['password'];
-		header("Location:http://localhost/aplicacion%20web/mains.php");
+		header("Location:http://localhost/aplicacionweb/main.php");
 	}
 
 ?>

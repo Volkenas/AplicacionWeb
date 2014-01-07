@@ -83,6 +83,6 @@ if(isset($_SESSION['user']) || $ndad =! 0)
 </body>
 </html>
 <?php }  else {
-    header("Location:index.php");
+    header("Location:main.php");
 }
 ?>
