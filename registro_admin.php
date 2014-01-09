@@ -408,10 +408,10 @@ include_once "operaciones/conexion.php";
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-     <div id="contenedor">
+     
      <h2 align="center"> Registro de Administrador </h2></br>
 
-        <section id="newstudent">
+        
             <table width="40%" align="center" border="0">
                 <tr>
                     <form method="POST" action="operaciones/newregistro.php" name="newestudent" onsubmit="return longitudreg();">
@@ -452,8 +452,8 @@ include_once "operaciones/conexion.php";
                     </form>
                     </tr>
             </table>
-        </section>
-    </div>
+      
+    
 
 
 
@@ -493,7 +493,7 @@ include_once "operaciones/conexion.php";
 
     var ValidarCedula = new LiveValidation('cedula');
     ValidarCedula.add(Validate.Presence);
-    ValidarCedula.add(Validate.Numericality, { minimum: 0, maximum: 35000000, onlyInteger: true, failureMessage: "Don't just ignore me, I wanna be your friend!" });
+    ValidarCedula.add(Validate.Numericality, { minimum: 0, maximum: 35000000, onlyInteger: true });
 
     var ValidarUsuario = new LiveValidation('usuario');
     ValidarUsuario.add(Validate.Presence);
