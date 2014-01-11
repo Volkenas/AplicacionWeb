@@ -517,7 +517,7 @@ if (isset($_POST['search']) || isset($_GET['trayecto']))
                             <tr>
                                 <td><label>Tutorial de Proyecto I:</label></td>
                                 <td>
-                                    <input type="text" name="tutopro1" id="tutopro1" maxlength="2" size="10" value="<?php if($issetnotas > 0){ echo $nota['tutopro1']; } ?>" onkeypress="return validar(event, 'num');">
+                                    <input type="text" name="tutopro1" id="tutopro1" maxlength="2" size="10" value="<?php if($issetnotas > 0){ echo $nota['tutopro1']; } ?>" ;>
                                 </td>
                             </tr>
                             <tr>
@@ -984,9 +984,185 @@ else
     <script src="./Carousel Template · Bootstrap_files/holder.js"></script>
     <!-- Validaciones JS-->
     <script>
-    var ValidarCedula = new LiveValidation('cedula');
-    ValidarCedula.add(Validate.Presence);
-    ValidarCedula.add(Validate.Numericality, { minimum: 0, maximum: 35000000, onlyInteger: true });
+    var ValidarNota = new LiveValidation('pnync');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('talleri');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('matini');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('ccys');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarCasc = new LiveValidation('tutopro1');
+    ValidarCasc.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('constdocu');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('matematica');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('fisicaapli');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('topografia');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('egdp');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('eode');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('mecanica');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('geohabitad');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('quimicagene');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('tutop2');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('hsi');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('gos');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('matecons');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('mecasuel');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('mecaflu');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('iac');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('admiobras');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('tecnoconst');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('obrasviales');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('instsangas');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('desproeti');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('resismate');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('electmeca');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('sistehidro');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('tutop3');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('desaendoconst');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('algebralineal');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('restmatering');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('geologiaapli');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('mecafluing');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('orgconveing');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('mateing');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('analiestruc');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('disenovial');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('hidrologia');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('polihabiviv');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('ecogerpro');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('concretarmad');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('acueclodre');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('unidadacre3');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('tutop4');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('ingpatri');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('urbedi');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('aceromadera');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('ingtransit');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('saneaconsambi');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('geresoci');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('manteobrascivi');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('disenoestruct');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('pavimentos');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('obrashidrau');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('fundamuros');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('obrasistrans');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('unidaacre4');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
+
+    var ValidarNota = new LiveValidation('evalambi');
+    ValidarNota.add(Validate.Numericality, { minimum: 0, maximum: 20, onlyInteger: true });
 
     </script>
 
@@ -1015,11 +1191,6 @@ else
 
 
 
-
-
-
-
-<!-- Comienza html -->
 
 
 
